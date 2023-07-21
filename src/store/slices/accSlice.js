@@ -43,7 +43,7 @@ const accSlice = createSlice({
       storeAcc(state);
     },
     removeAcc(state, action) {
-      state.slice(action.payload, 1);
+      state.splice(action.payload, 1);
       storeAcc(state);
     },
     editItem(state, action) {

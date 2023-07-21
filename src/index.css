@@ -174,8 +174,8 @@ input:focus {
 }
 .acc .acc-body .acc-item {
   display: flex;
+  padding: 5px;
   padding-left: 15px;
-  margin-bottom: 10px;
   gap: 15px;
   align-items: center;
 }
@@ -312,4 +312,39 @@ input:focus {
 .history .history-remove-icon {
   font-size: 20px;
   color: gray;
+}
+
+.backup {
+  display: flex;
+  margin: 20px;
+  gap: 35px;
+  flex-direction: column;
+}
+.backup input {
+  accent-color: red;
+  color: green;
+  background-color: red;
+}
+.backup .input-file {
+  border: 1px solid #9f9f9f;
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.backup .input-file button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #191919;
+}
+.backup .input-file p {
+  padding-left: 20px;
+  overflow: auto;
+}
+.backup .info {
+  margin-bottom: 14px;
+}
+.backup .btn {
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */

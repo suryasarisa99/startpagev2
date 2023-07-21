@@ -5,7 +5,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 import { FaChevronRight } from "react-icons/fa";
 import { MdModeEdit } from "react-icons/md";
 import { useDispatch } from "react-redux";
-import { editItem, addItem, removeItem } from "../store/store";
+import { editItem, addItem, removeItem, removeAcc } from "../store/store";
 import { motion } from "framer-motion";
 export default function Acc({
   data,
@@ -89,7 +89,10 @@ export default function Acc({
         </div>
         {editMode == mIndex && (
           <div className="options">
-            <FaTrash className="icon bin" />
+            <FaTrash
+              className="icon bin"
+              onClick={() => dispatch(removeAcc(mIndex))}
+            />
             <motion.div
               whileTap={{ rotate: 45 }}
               animate={{ rotate: addMode ? 45 : 0 }}
