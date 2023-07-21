@@ -1,0 +1,315 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Fira Code";
+  accent-color: rgb(99, 99, 116);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #191919;
+  border: 1px solid rgb(138, 138, 138);
+  color: white;
+  border-radius: 8px;
+  border: 1.7px solid #9f9f9f;
+}
+
+.f-btn {
+  padding: 10px 20px;
+  width: 100%;
+  border: 1px solid #9f9f9f;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+input {
+  background-color: black;
+  border: none;
+  font-family: "Fira Code";
+  color: white;
+}
+input:focus {
+  outline: none;
+}
+
+.input {
+  background-color: black;
+  border: 1px solid #9f9f9f;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.item {
+  width: 100%;
+  padding: 10px 18px;
+  background-color: #191919;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.item-icon {
+  width: 100%;
+  padding: 10px 18px;
+  background-color: #191919;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.item-icon div {
+  flex-grow: 1;
+}
+
+.acc {
+  color: white;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+.acc .acc-head {
+  display: flex;
+  height: 35px;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 8px;
+  border: 1px solid #9f9f9f;
+  padding: 10px;
+  background-color: #191919;
+  padding: 25px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  justify-content: space-between;
+}
+.acc .acc-head .main {
+  display: flex;
+  gap: 30px;
+}
+.acc .acc-head .options {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.acc .acc-head .options .icon {
+  font-size: 20px;
+  color: rgb(183, 183, 183);
+}
+.acc .acc-head .options .bin {
+  font-size: 14px;
+}
+.acc .edit-box {
+  margin-top: 20px;
+  position: relative;
+  overflow-x: hidden;
+}
+.acc .edit-box .edit-item {
+  width: 100%;
+  padding: 10px 18px;
+  background-color: #191919;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+}
+.acc .edit-box .edit-item p {
+  flex-grow: 1;
+}
+.acc .edit-box .edit-input {
+  margin-top: 20px;
+}
+.acc .edit-box .edit-input input {
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding: 8px 16px;
+}
+.acc .edit-box .add-btn {
+  padding: 6px 8px;
+  padding-bottom: 4px;
+}
+.acc .acc-body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 12px;
+}
+.acc .acc-body .input-field {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  border: 1px solid #9f9f9f;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin: 5px;
+}
+.acc .acc-body .input-field .icon {
+  font-size: 16px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+.acc .acc-body .input-field input {
+  flex: 1;
+  font-size: 16px;
+}
+.acc .acc-body .acc-item {
+  display: flex;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  gap: 15px;
+  align-items: center;
+}
+.acc .acc-head .icon {
+  margin-left: 10px;
+}
+.acc .acc-head:hover {
+  box-shadow: 0 0 0 5px rgba(128, 128, 128, 0.396);
+  border: 1px solid rgba(222, 222, 222, 0.754);
+}
+
+.home,
+.settings,
+.create-acc,
+.history {
+  margin: 20px;
+}
+
+.add-item-fields {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.add-item-fields input {
+  font-size: 16px;
+  padding: 8px 16px;
+}
+.add-item-fields .field {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.add-item-fields .field input {
+  flex-grow: 1;
+  width: 100%;
+}
+.add-item-fields .field button {
+  padding: 8px 15px;
+}
+
+.create-acc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.create-acc .inp-title {
+  margin-bottom: 15px;
+}
+.create-acc .item {
+  background-color: #191919;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+}
+.create-acc .item div {
+  flex-grow: 1;
+}
+.create-acc .item .icon {
+  font-size: 22px;
+  color: rgb(111, 111, 111);
+}
+
+.settings button {
+  margin-bottom: 15px;
+}
+.settings .settings-head {
+  margin-bottom: 30px;
+}
+
+.icon-outer {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 8px;
+}
+
+.search {
+  position: fixed;
+  bottom: 20px;
+  border: 1px solid rgb(104, 104, 104);
+  border-radius: 15px;
+  background-color: black;
+  z-index: 10;
+  width: calc(100% - 40px);
+}
+.search .s-es {
+  bottom: calc(100% + 15px);
+  position: absolute;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+  border: 1px solid grey;
+  border-radius: 12px;
+  padding: 10px;
+  width: 100%;
+  background-color: black;
+}
+.search .s-e {
+  display: flex;
+  gap: 10px;
+  width: 400px;
+  color: white;
+}
+.search form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 12px;
+}
+.search form button {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-top: 5px;
+  border-radius: 15px;
+  background-color: black;
+}
+.search input {
+  flex-grow: 1;
+  font-size: 18px;
+  border-radius: 15px;
+  text-align: left;
+  padding-left: 8px;
+  height: 45px;
+}
+
+.history h2 {
+  margin-bottom: 25px;
+  margin-left: 20px;
+}
+.history .history-remove-icon {
+  font-size: 20px;
+  color: gray;
+}/*# sourceMappingURL=index.css.map */
