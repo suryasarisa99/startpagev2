@@ -10,6 +10,9 @@ import Clear from "./pages/Clear";
 // import { FaGear } from "react-icons/fa";
 import { accInitial, historyInitial, seInitial } from "./store/store";
 import Backup from "./pages/Backup";
+import { registerSW } from "virtual:pwa-register";
+
+registerSW();
 
 function App() {
   const dispatch = useDispatch();
